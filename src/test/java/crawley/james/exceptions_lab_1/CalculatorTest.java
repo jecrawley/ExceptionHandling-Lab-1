@@ -42,4 +42,18 @@ public class CalculatorTest {
         Calculator.divide(5, 0);
 
     }
+
+    @Test
+    public void squareRootTest () {
+
+        assertEquals("The result should be 8.", 8, Calculator.squareRoot(64), 0);
+
+    }
+
+    @Test (expected = ComplexNumberException.class)
+    public void squareRootOfNegativeTest () {
+
+        Calculator.squareRoot(-10);
+
+    }
 }

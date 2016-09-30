@@ -34,7 +34,15 @@ public class Calculator {
 
     }
 
-//    public static int add () {
-//
-//    }
+    public static double squareRoot (double a) throws ComplexNumberException {
+
+        if (a < 0) {
+
+            throw new ComplexNumberException();
+
+        }
+
+        return Math.sqrt(a);
+
+    }
 }
