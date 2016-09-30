@@ -36,7 +36,7 @@ public class CalculatorTest {
 
     }
 
-    @Test (expected = ArithmeticException.class)
+    @Test (expected = DivideByZeroException.class)
     public void divideByZeroTest () {
 
         Calculator.divide(5, 0);

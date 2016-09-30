@@ -23,11 +23,11 @@ public class Calculator {
 
     }
 
-    public static double divide (double a, double b) throws ArithmeticException {
+    public static double divide (double a, double b) throws DivideByZeroException {
 
         if (b == 0) {
 
-            throw new ArithmeticException();
+            throw new DivideByZeroException();
         }
 
         return a / b;

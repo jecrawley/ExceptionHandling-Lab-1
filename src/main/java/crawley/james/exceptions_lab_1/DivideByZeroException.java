@@ -3,14 +3,14 @@ package crawley.james.exceptions_lab_1;
 /**
  * Created by jamescrawley on 9/30/16.
  */
-public class DoNotCall extends Exception {
+public class DivideByZeroException extends ArithmeticException {
 
-    DoNotCall () {
+    DivideByZeroException () {
 
         super();
     }
 
-    DoNotCall (String message) {
+    DivideByZeroException (String message) {
 
         super(message);
 
